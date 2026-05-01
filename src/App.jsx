@@ -20,17 +20,12 @@ function App() {
           <Row>
             <Title />
           </Row>
-          <Row className="d-flex flex-column">
-            <Col className="d-flex flex-row col-1 col-md-6 col-lg-12">
-              <NetflixCarousel title={"Trending Now"} movie={"avatar"} />
-            </Col>
-            <Col>
-              <NetflixCarousel title={"Watch It Again"} movie={"Avenger"} />
-            </Col>
-            <Col>
-              <NetflixCarousel title={"New Releases"} movie={"Star Wars"} />
-            </Col>
-          </Row>
+
+          <NetflixCarousel title={"Trending Now"} movie={"batman"} />
+
+          <NetflixCarousel title={"Watch It Again"} movie={"pokemon"} />
+
+          <NetflixCarousel title={"New Releases"} movie={"Star Wars"} />
         </Container>
       </main>
       <footer></footer>

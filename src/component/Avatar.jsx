@@ -1,18 +1,13 @@
-import NetfilxAvatar from "../assets/Netflix-assets/assets/kids_icon.png"
-const Avatar = () => {
+const Avatar = ({ img, icon, size, margin }) => {
   return (
     <div>
-      <img src={NetfilxAvatar} alt="avatar_netflix" style={{ width: "50px" }} />
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        className="bi bi-caret-down-fill text-light ms-2"
-        viewBox="0 0 16 16"
-      >
-        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-      </svg>
+      <img
+        src={img}
+        alt="avatar_netflix"
+        style={{ width: size }}
+        className={margin}
+      />
+      {icon}
     </div>
   )
 }

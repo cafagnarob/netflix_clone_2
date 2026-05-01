@@ -4,6 +4,8 @@ import { Container, Row, Col } from "react-bootstrap"
 import Title from "./component/Title"
 import NetflixCarousel from "./component/NetflixCarousel"
 import NetflixFooter from "./component/NetflixFooter"
+import NetflixSettign from "./component/NetflixSetting"
+import NetflixProfile from "./component/NetflixProfile"
 function App() {
   return (
     <>
@@ -28,6 +30,10 @@ function App() {
 
           <NetflixCarousel title={"New Releases"} movie={"Star Wars"} />
         </Container>
+        {/* questa è la pagina setting */}
+        <NetflixSettign />
+        {/* questa è la pagina Profilo */}
+        <NetflixProfile />
       </main>
       <footer>
         <Container

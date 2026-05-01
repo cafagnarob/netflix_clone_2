@@ -21,7 +21,7 @@ function App() {
             <Title />
           </Row>
           <Row className="d-flex flex-column">
-            <Col>
+            <Col className="d-flex flex-row col-1 col-md-6 col-lg-12">
               <NetflixCarousel title={"Trending Now"} movie={"avatar"} />
             </Col>
             <Col>

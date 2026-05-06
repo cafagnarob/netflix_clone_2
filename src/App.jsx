@@ -8,6 +8,7 @@ import NetflixProfile from "./component/NetflixProfile"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./component/Home"
 import Serietv from "./component/Serietv"
+import FilmDetails from "./component/FilmDetails"
 function App() {
   return (
     <BrowserRouter>
@@ -27,9 +28,11 @@ function App() {
             <Route path="/setting" element={<NetflixSettign />} />
             <Route path="/profile" element={<NetflixProfile />} />
             <Route path="/serietv" element={<Serietv />} />
+            <Route path="/:imdbID" element={<FilmDetails />} />
           </Routes>
         </main>
         <footer>
+          <FilmDetails />
           <Container
             fluid={true}
             className="d-flex justify-content-center pt-5 bg-dark"

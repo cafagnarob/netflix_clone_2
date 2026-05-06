@@ -101,6 +101,9 @@ const NetflixCarousel = (props) => {
                         overflow: "hidden",
                         borderRadius: "4px",
                       }}
+                      onClick={() => {
+                        navigate("/" + film.imdbID)
+                      }}
                     >
                       <img
                         className="w-100 h-100 img-fluid"

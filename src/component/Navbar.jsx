@@ -36,7 +36,7 @@ function NavbarNetflix() {
           </Nav>
           <Nav
             className="d-flex flex-row align-items-center justify-content-end gap-3
-          "
+            "
           >
             <EndNavbar />
           </Nav>

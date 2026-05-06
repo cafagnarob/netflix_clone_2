@@ -1,22 +1,22 @@
-import { Nav } from "react-bootstrap"
+import { Link } from "react-router-dom"
 const StartNavbar = () => {
   return (
     <>
-      <Nav.Link href="#" className="text-light">
+      <Link to="/" className="text-light nav-link">
         Home
-      </Nav.Link>
-      <Nav.Link href="#" className="text-light">
+      </Link>
+      <Link to="/serietv" className="text-light  nav-link">
         Serie TV
-      </Nav.Link>
-      <Nav.Link href="#" className="text-light">
+      </Link>
+      <Link to="" className="text-light nav-link">
         Film
-      </Nav.Link>
-      <Nav.Link href="#" className="text-light">
+      </Link>
+      <Link to="" className="text-light nav-link">
         Nuovi e popolari
-      </Nav.Link>
-      <Nav.Link href="#" className="text-light">
+      </Link>
+      <Link to="" className="text-light nav-link">
         La mia lista
-      </Nav.Link>
+      </Link>
     </>
   )
 }

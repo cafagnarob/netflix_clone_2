@@ -32,7 +32,7 @@ function App() {
           </Routes>
         </main>
         <footer>
-          <FilmDetails />
+          {" "}
           <Container
             fluid={true}
             className="d-flex justify-content-center pt-5 bg-dark"

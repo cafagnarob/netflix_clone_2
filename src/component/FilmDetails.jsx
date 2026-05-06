@@ -8,12 +8,13 @@ const FilmDetails = () => {
   const [film, setFilm] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
-  const [comments, setComments] = useState(null)
-  const { imdbID } = useParams()
-  console.log("oggetto params", imdbID)
+  const [comments, setComments] = useState([])
+  const params = useParams()
+  console.log("oggetto params", params.imdbID)
 
   const getFilm = () => {
-    fetch(ApiLink + imdbID)
+    console.log("sono getfilm")
+    fetch(ApiLink + params.imdbID)
       .then((res) => {
         if (!res.ok) throw new Error("errore HTTP")
         return res.json()
@@ -30,7 +31,7 @@ const FilmDetails = () => {
   }
 
   const getComment = () => {
-    fetch(ApiLinkComment + imdbID, {
+    fetch(ApiLinkComment + params.imdbID, {
       headers: {
         Authorization:
           "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWY5ZTVjYjU0YTMxNTAwMTU1OGIxYjEiLCJpYXQiOjE3NzgwNzgyODMsImV4cCI6MTc3OTI4Nzg4M30.FYH_IvOF9ve0AfaXWsR63A8vKXHU_oXLBjNrolOBpoQ",
@@ -51,7 +52,7 @@ const FilmDetails = () => {
   useEffect(() => {
     getFilm()
     getComment()
-  }, [imdbID])
+  }, [])
 
   if (loading) return <p>Loading...</p>
   if (error) return <p>{error}</p>

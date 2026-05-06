@@ -7,7 +7,7 @@ const NetflixFooter = () => {
         <div className=" mb-2">
           {/* icone facebook */}
           <svg
-            class="me-2"
+            className="me-2"
             xmlns="http://www.w3.org/2000/svg"
             width="20"
             height="20"
@@ -15,13 +15,13 @@ const NetflixFooter = () => {
           >
             <path
               fill="#808080"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.792C0 19.506.494 20 1.104 20h9.578v-7.745H8.076V9.237h2.606V7.01c0-2.584 1.578-3.99 3.883-3.99c1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.596-1.496 1.47v1.927h2.989l-.39 3.018h-2.6V20h5.097c.61 0 1.104-.494 1.104-1.104V1.104C20 .494 19.506 0 18.896 0Z"
             />
           </svg>
           {/* icona instagram */}
           <svg
-            class="mx-2"
+            className="mx-2"
             xmlns="http://www.w3.org/2000/svg"
             width="20"
             height="20"
@@ -34,7 +34,7 @@ const NetflixFooter = () => {
           </svg>
           {/*  icona X  */}
           <svg
-            class="mx-2"
+            className="mx-2"
             xmlns="http://www.w3.org/2000/svg"
             width="20"
             height="20"
@@ -47,7 +47,7 @@ const NetflixFooter = () => {
           </svg>
           {/*  icone Youtube  */}
           <svg
-            class="mx-2"
+            className="mx-2"
             xmlns="http://www.w3.org/2000/svg"
             width="20"
             height="20"
@@ -65,7 +65,7 @@ const NetflixFooter = () => {
         style={{ fontSize: "15px", lineHeight: "25px" }}
       >
         <div id="list_sevice">
-          <ul class="list-unstyled text-secondary">
+          <ul className="list-unstyled text-secondary">
             <li>Audio and Subtitles</li>
             <li>Media Canter</li>
             <li>Privacy</li>
@@ -78,7 +78,7 @@ const NetflixFooter = () => {
         style={{ fontSize: "15px", lineHeight: "25px" }}
       >
         <div id="list_sevice_2">
-          <ul class="list-unstyled text-secondary">
+          <ul className="list-unstyled text-secondary">
             <li>Audio Description</li>
             <li>Investor Relation</li>
             <li>Legal Notices</li>
@@ -90,7 +90,7 @@ const NetflixFooter = () => {
         style={{ fontSize: "15px", lineHeight: "25px" }}
       >
         <div id="list_sevice_3">
-          <ul class="list-unstyled text-secondary">
+          <ul className="list-unstyled text-secondary">
             <li>Help Center</li>
             <li>Jobs</li>
             <li>Cookie Preferences</li>
@@ -102,7 +102,7 @@ const NetflixFooter = () => {
         style={{ fontSize: "15px", lineHeight: "25px" }}
       >
         <div id="list_sevice_4">
-          <ul class="list-unstyled text-secondary">
+          <ul className="list-unstyled text-secondary">
             <li>Gift Card</li>
             <li>Terms of Use</li>
             <li>Corporate Information</li>
